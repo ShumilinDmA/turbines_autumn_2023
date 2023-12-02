@@ -4,7 +4,7 @@ import numpy as np
 
 def check_same_size(a: np.ndarray, b: np.ndarray) -> None:
     if a.shape != b.shape:
-        raise ValueError("Size of arrays should be the same!")
+        raise ValueError(f"Size of arrays should be the same! a.shape = {a.shape}, b.shape = {b.shape}")
 
 
 def check_valid_types(a: Any) -> None:
